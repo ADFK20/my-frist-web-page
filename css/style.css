@@ -1,0 +1,101 @@
+* {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+transition: all ease-in-out 1s;
+}
+body { 
+padding: 0 3%;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-icon{
+    color: #89AAFD;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    width: 30%;
+}
+.nav-icon h4 {
+    padding: 5px;
+}
+.nav-icon img{
+    width: 100px;
+}
+nav ul {
+    width: 60%;
+    padding-left: 20%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul a{  
+    color: #89AAFD;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+}
+nav .nav-drop-list{
+    color: #89AAFD;
+    font-weight: bold;
+    font-size: 25px;
+    transition: all ease-in-out 1.5s;
+}
+nav .nav-drop-list:checked, .nav-drop-list:hover{
+    transform: rotatey(180deg);
+}
+/*-------------------------  main  --------------------------*/
+.main{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/doctor-nurses-special-equipment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main .layer{
+    display: flex;
+    justify-content: center;
+    background-color: #89aafd45;
+    height: 100%;
+}
+.main .text{
+    width: 35%;
+    height: 60%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 1.5em;
+    
+}
+.main .text button{
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3f64c3;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+}
+.main .text button:hover{
+    background-color: white;
+    color: #3f64c3;
+    transform: translateY(-15px);
+}
