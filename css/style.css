@@ -54,7 +54,7 @@ nav .nav-drop-list:checked, .nav-drop-list:hover{
 /*-------------------------  main  --------------------------*/
 .main{
     width: 100%;
-    height: 700px;
+    height: 1000px;
     background-image: url(../images/doctor-nurses-special-equipment.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,12 +77,13 @@ nav .nav-drop-list:checked, .nav-drop-list:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-size: 2em;
+    font-size: 2.65em;
 }
 .main .text button{
-    width: 170px;
-    padding: 10px;
-    font-size: 18px;
+    width: 300px;
+    height: 60px;
+    padding: 1px;
+    font-size: 25px;
     font-weight: bold;
     background-color: #3f64c3;
     color: white;
@@ -145,6 +146,48 @@ nav .nav-drop-list:checked, .nav-drop-list:hover{
 }
 .offers .card:hover{
     background-color: white;
-    color: #3f64c3 ;
+    color: #3f64c3;
     transform: translateY(-25px);
+}
+.our-doctor{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.our-doctor h2{
+    width: 100%;
+    font-size: 55px;
+    font-weight: bold;
+    color: #3f64c3;
+    padding: 20px;
+}
+.our-doctor img{
+    margin: 50px 50px 80px ;
+    width: 250px;
+    border: #3f64c3 2px solid;
+    border-radius: 50%;
+}
+.our-doctor .doc-card{
+    color: #3f64c3;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 45px;
+    width: 35%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.our-doctor .doc-card:hover{
+background-color: #89AAFD;
+border: 1px solid black;
+transform: translateY(-20px);
+border-radius: 50px;
+color: white;
 }
