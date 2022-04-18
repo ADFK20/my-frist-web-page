@@ -3,9 +3,11 @@ box-sizing: border-box;
 font-family: Arial, Helvetica, sans-serif;
 transition: all ease-in-out 1s;
 }
-body { 
+body{
+    margin: 0;
 }
 nav{
+    box-sizing: border-box;
     position: fixed;
     top: 0%;
     left: 0%;
@@ -19,7 +21,8 @@ nav{
     z-index: 5;
 }
 nav span{
-    background-color: white;
+    background-color: #89AAFD;
+    color:#fff;
 }
 .nav-icon{
     color: #89AAFD;
@@ -43,23 +46,95 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition: all ease-in-out 1.5s !important;
 }
 nav ul a{  
-    color: #132f77;
+    color: #3f64c3;
     font-weight: bold;
     font-size: 20px;
     padding: 5px;
     text-decoration: none;
 }
 nav .nav-drop-list{
-    color: #89AAFD;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #3f64c3;
     font-weight: bold;
     font-size: 25px;
     transition: all ease-in-out 1.5s;
 }
 nav .nav-drop-list:checked, .nav-drop-list:hover{
     transform: rotatey(180deg);
+    background-color: rgba(255, 255, 255, 0.492);
 }
+/*----------------------  side nav  --------------------------*/
+
+.sidenav {
+    height: 80%;
+    width: 17%;
+        position: fixed;
+    top: 83px;
+    right: -20%;
+    background: rgba(255, 255, 255, 0.475);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+.toggole{
+    right: 0%;
+
+}
+.sidenav .head {
+    height: 20%;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    color: #89AAFD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidenav .head  span{
+    background-color: #89AAFD;
+    color: #fff;
+}
+.sidenav ul{
+    height: 80%;
+    list-style: none;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 ;
+    margin-bottom: 30px;
+
+}
+.sidenav ul a{  
+    color: #132f77;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.sidenav ul li{
+    border-bottom: #fff 1px solid;
+    width: 100%;
+    height: 25%;
+    padding: 25px;
+
+    display: flex;
+        align-items: center;
+    justify-content: center;
+}
+
 /*-------------------------  main  --------------------------*/
 .main{
     width: 100%;
@@ -82,11 +157,17 @@ nav .nav-drop-list:checked, .nav-drop-list:hover{
     margin: auto;
     text-align: center;
     color:white;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     font-size: 2.65em;
+}
+.main .text h1{
+    background-color: #89AAFD61;
+    border-radius: 25px;
+    padding: 10px;
 }
 .main .text button{
     width: 300px;
@@ -238,6 +319,6 @@ color: white;
     z-index: 1;
     font-size: 2.5em;
     color: #000;
-    bo
+    
 
 }
